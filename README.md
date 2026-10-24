@@ -8,7 +8,7 @@ Score your rounds, names on every course, weekly challenges and 100 trophies, co
   gzip+base64 blobs (`"data":"..."`), so plain text search finds nothing — decompress first (see CHAINS_SYSTEM.md §7).
   `CHAINS_VERSION = "vNNN"` is the version marker shown in the app's sidebar.
 - `test.html` — staging copy. Deploy here first, verify, then copy to `index.html`. Read-only against the league database.
-- `sw.js` — service worker (offline shell).
+- `sw.js` — service worker (installability only; it caches nothing on purpose so nobody is pinned to an old build — there is no offline launch).
 - `about.html` — the public landing page. `stickers/` — printable QR stickers (one per course, `#course=<id>`).
 - `docs/` — deployment notes and lessons learned.
 
